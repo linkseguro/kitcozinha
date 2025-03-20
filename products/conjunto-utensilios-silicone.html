@@ -757,10 +757,11 @@ for (var attr in meta) {
 <store-header sticky="" class="header  " role="banner"><div class="container">
     <div class="header__wrapper">
       <!-- LEFT PART -->
-      <nav class="header__inline-navigation"><div class="header__icon-list hidden-desk"><button is="toggle-button" class="header__icon-wrapper tap-area hidden-desk" aria-controls="mobile-menu-drawer" aria-expanded="false">
+      <nav class="header__inline-navigation"><div class="header__icon-list hidden-desk"><button is="toggle-button"   aria-expanded="false" style="
+    visibility: hidden;
+">
               <span class="visually-hidden">Navegação</span><svg focusable="false" width="18" height="14" class="icon icon--header-hamburger   " viewbox="0 0 18 14">
         <path d="M0 1h18M0 13h18H0zm0-6h18H0z" fill="none" stroke="currentColor" stroke-width="2"></path>
-      </svg></button><a href="/search" is="toggle-link" class="header__icon-wrapper tap-area hidden-lap hidden-desk" aria-controls="search-drawer" aria-expanded="false" aria-label="Pesquisar"><svg focusable="false" width="18" height="18" class="icon icon--header-search   " viewbox="0 0 18 18">
         <path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
       </svg></a>
         </div><div class="header__search-bar predictive-search hidden-pocket">
@@ -775,14 +776,12 @@ for (var attr in meta) {
 
       <!-- LOGO PART --><span class="header__logo"><a class="header__logo-link" href="/"><span class="visually-hidden">Essencial Home</span>
             <img class="header__logo-image" width="3019" height="1062" src="../cdn/shop/files/Prancheta_1_480x.png?v=1723069840" alt=""></a></span><!-- SECONDARY LINKS PART -->
-      <div class="header__secondary-links"><div class="header__icon-list"><button is="toggle-button" class="header__icon-wrapper tap-area hidden-phone " aria-controls="newsletter-popup" aria-expanded="false">
+      <div class="header__secondary-links"><div class="header__icon-list"><button is="" " aria-controls="newsletter-popup" aria-expanded="false" >
             <span class="visually-hidden">Lista de e-mails</span><svg focusable="false" width="20" height="16" class="icon icon--header-email   " viewbox="0 0 20 16">
         <path d="M19 4l-9 5-9-5" fill="none" stroke="currentColor" stroke-width="2"></path>
         <path stroke="currentColor" fill="none" stroke-width="2" d="M1 1h18v14H1z"></path>
-      </svg></button><a href="https://shopify.com/88328995101/account?locale=pt-BR&region_country=BR" class="header__icon-wrapper tap-area hidden-phone " aria-label="Login"><svg focusable="false" width="18" height="17" class="icon icon--header-customer   " viewbox="0 0 18 17">
         <circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
         <path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
-      </svg></a><a href="/cart" is="toggle-link" aria-controls="mini-cart" aria-expanded="false" class="header__icon-wrapper tap-area " aria-label="Carrinho" data-no-instant=""><svg focusable="false" width="21" height="20" class="icon icon--header-shopping-cart   " viewbox="0 0 21 20">
         <path d="M0 1H4L5 11H17L19 4H8" fill="none" stroke="currentColor" stroke-width="2"></path>
         <circle cx="6" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
         <circle cx="16" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
@@ -799,7 +798,7 @@ for (var attr in meta) {
         <a class="header__linklist-link link--animated" href="/collections/organizacao">Organização</a></li></ul>
 </desktop-navigation>
       </nav></div>
-</store-header><cart-notification global="" hidden="" class="cart-notification "></cart-notification><mobile-navigation append-body="" id="mobile-menu-drawer" class="drawer drawer--from-left">
+</store-header><cart-notification global="" hidden="" class="cart-notification "></cart-notification><mobile-navigation append-body=""  class="drawer drawer--from-left">
   <span class="drawer__overlay"></span>
 
   <div class="drawer__header drawer__header--shadowed">
@@ -970,7 +969,7 @@ const shopify = '95e031-ea.myshopify.com'
                     <span id="sticky-form-option-template--23220702413085__main-1-value" class="select__selected-value"><span class="select__color-swatch " aria-label="Preto" style="background-color: #000"></span>Preto</span><svg focusable="false" width="12" height="8" class="icon icon--chevron   " viewbox="0 0 12 8">
         <path fill="none" d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
       </svg></button>
-                </div></product-variants><product-payment-container form-id="product-form-template--23220702413085__main-9608838381853" class="product-sticky-form__payment-container"><button id="StickyAddToCart" is="loader-button" form="product-form-template--23220702413085__main-9608838381853" type="submit" data-product-add-to-cart-button="" data-use-primary="" data-button-content="Comprar Agora" class="product-form__add-button button button--primary">Comprar Agora</button>
+                </div></product-variants><product-payment-container form-id="product-form-template--23220702413085__main-9608838381853" class="product-sticky-form__payment-container"><button id="StickyAddToCart" is="loader-button" form="product-form-template--23220702413085__main-9608838381853" onclick="window.location.href = 'https://pay.compreibarato.shop/P5LNZ8J8pLzgaRy'" data-product-add-to-cart-button="" data-use-primary="" data-button-content="Comprar Agora" class="product-form__add-button button button--primary">Comprar Agora</button>
           </product-payment-container>
         </div>
       </div>
@@ -1538,7 +1537,9 @@ window.onclick = function(event) {
 <recently-viewed-products section-id="template--23220702413085__cbf59905-7a41-4ab9-9f25-68c215e68e5f" products-count="4" exclude-product-id="9608838381853" class="section "></recently-viewed-products>
 
 </div>
-<div id="shopify-section-static-text-with-icons" class="shopify-section shopify-section--text-with-icons"></div><div id="shopify-section-static-newsletter" class="shopify-section shopify-section--newsletter"></div><a href="https://wa.me/5511971213425" class="whatsapp-button-sticky" target="_blank"> 
+<div id="shopify-section-static-text-with-icons" class="shopify-section shopify-section--text-with-icons"></div><div id="shopify-section-static-newsletter" class="shopify-section shopify-section--newsletter"></div><a href="https://wa.me/5511971213425" class="whatsapp-button-sticky" target="_blank" style="
+    visibility: hidden;
+"> 
   <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 308 308" xml:space="preserve">
